@@ -10,6 +10,8 @@
 #include <stdio.h>
 #include <tchar.h>
 
+#define FILETIMETOUINT64(ft) \
+((((unsigned __int64)ft.dwHighDateTime) << 32) | (ft.dwLowDateTime))
 
 
 // TODO: reference additional headers your program requires here
